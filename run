@@ -1,0 +1,17 @@
+#! usr/bin/env php
+<?php
+
+namespace Creational\Prototype;
+
+require_once 'vendor/autoload.php';
+
+$firstPrototype = new FirstPrototype();
+
+$firstPrototype->getPrototype();
+printf("%s \n", FirstPrototype::$count);
+
+$firstPrototype->getPrototype();
+printf("%s \n", FirstPrototype::$count);
+
+$firstPrototype->getPrototype();
+printf("%s \n", FirstPrototype::$count);
