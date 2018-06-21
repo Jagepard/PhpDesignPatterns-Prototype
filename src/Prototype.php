@@ -1,35 +1,23 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 29.03.18
- * Time: 12:00
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace Creational\Prototype;
-
 
 /**
  * Class Prototype
  * @package Creational\Prototype
  */
-abstract class Prototype
+class Prototype extends AbstractPrototype
 {
 
-    /**
-     * @var int
-     */
-    public static $count = 0;
-
-    abstract public function __clone();
-
-    /**
-     * @return mixed
-     */
-    public function getPrototype(): Prototype
+    public function __clone()
     {
-        return clone $this;
+        Prototype::$count++;
     }
 }
