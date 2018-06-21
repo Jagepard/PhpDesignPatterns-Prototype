@@ -5,13 +5,13 @@ namespace Creational\Prototype;
 
 require_once 'vendor/autoload.php';
 
-$firstPrototype = new Prototype();
+$prototype = new Prototype();
 
-$firstPrototype->getPrototype();
+$prototype->getPrototype();
 printf("%s \n", Prototype::$count);
 
-$firstPrototype->getPrototype();
+$prototype->getPrototype();
 printf("%s \n", Prototype::$count);
 
-$firstPrototype->getPrototype();
+$prototype->getPrototype();
 printf("%s \n", Prototype::$count);
