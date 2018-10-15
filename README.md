@@ -7,3 +7,5 @@
 
 # Prototype | [API](https://github.com/Jagepard/PhpDesignPatterns-Prototype/blob/master/docs.md "Documentation API")
 Прототип
+
+![Prototype](https://github.com/Jagepard/PhpDesignPatterns-Prototype/blob/master/UML.png)
