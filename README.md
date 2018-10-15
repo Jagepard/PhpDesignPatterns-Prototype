@@ -5,5 +5,5 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# Prototype
+# Prototype | [API](https://github.com/Jagepard/PhpDesignPatterns-Prototype/blob/master/docs.md "Documentation API")
 Прототип
