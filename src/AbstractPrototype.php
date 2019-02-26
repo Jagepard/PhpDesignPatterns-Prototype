@@ -15,7 +15,6 @@ namespace Creational\Prototype;
  */
 abstract class AbstractPrototype
 {
-
     /**
      * @var int
      */

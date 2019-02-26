@@ -16,11 +16,10 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
  */
 class PrototypeTest extends PHPUnit_Framework_TestCase
 {
-
     /**
      * @var AbstractPrototype
      */
-    protected $prototype;
+    private $prototype;
 
     protected function setUp(): void
     {
@@ -29,17 +28,25 @@ class PrototypeTest extends PHPUnit_Framework_TestCase
 
     public function testInstances()
     {
-        $clonedFirstPrototype = $this->prototype->getPrototype();
-        $this->assertFalse($clonedFirstPrototype === $this->prototype);
+        $clonedFirstPrototype = $this->getPrototype()->getPrototype();
+        $this->assertFalse($clonedFirstPrototype === $this->getPrototype());
         $this->assertInstanceOf(Prototype::class, $clonedFirstPrototype);
     }
 
     public function testCountInstances()
     {
         $this->assertEquals(AbstractPrototype::$count, 1);
-        $this->prototype->getPrototype();
+        $this->getPrototype()->getPrototype();
         $this->assertEquals(AbstractPrototype::$count, 2);
-        $this->prototype->getPrototype();
+        $this->getPrototype()->getPrototype();
         $this->assertEquals(AbstractPrototype::$count, 3);
+    }
+
+    /**
+     * @return AbstractPrototype
+     */
+    public function getPrototype(): AbstractPrototype
+    {
+        return $this->prototype;
     }
 }
