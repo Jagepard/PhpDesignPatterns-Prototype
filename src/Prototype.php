@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Creational\Prototype;
 
-/**
- * Class Prototype
- * @package Creational\Prototype
- */
 class Prototype extends AbstractPrototype
 {
     public function __clone()
