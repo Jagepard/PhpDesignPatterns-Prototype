@@ -11,9 +11,6 @@ use Creational\Prototype\Prototype;
 use Creational\Prototype\AbstractPrototype;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class PrototypeTest
- */
 class PrototypeTest extends PHPUnit_Framework_TestCase
 {
     /**

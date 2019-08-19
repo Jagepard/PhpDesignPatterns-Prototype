@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Creational\Prototype;
 
-/**
- * Class AbstractPrototype
- * @package Creational\Prototype
- */
 abstract class AbstractPrototype
 {
     /**
