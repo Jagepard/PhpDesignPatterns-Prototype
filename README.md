@@ -6,8 +6,6 @@
 -----
 
 # Prototype | [API](https://github.com/Jagepard/PhpDesignPatterns-Prototype/blob/master/docs.md "Documentation API")
-```php run``` Запустить исполнение шаблона в терминале
-
-Прототип
+```php run``` execute in terminal
 
 ![Prototype](https://github.com/Jagepard/PhpDesignPatterns-Prototype/blob/master/UML.png)

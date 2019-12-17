@@ -7,8 +7,6 @@
 
 ### Class: \Creational\Prototype\Prototype
 
-> Class Prototype
-
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__clone()</strong> : <em>void</em> |
@@ -18,8 +16,6 @@
 <hr />
 
 ### Class: \Creational\Prototype\AbstractPrototype (abstract)
-
-> Class AbstractPrototype
 
 | Visibility | Function |
 |:-----------|:---------|
