@@ -1,14 +1,11 @@
 <?php
 
-declare(strict_types=1);
-
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
-use Creational\Prototype\Prototype;
-use Creational\Prototype\AbstractPrototype;
+use Creational\Prototype\{Prototype, AbstractPrototype};
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class PrototypeTest extends PHPUnit_Framework_TestCase
@@ -25,25 +22,17 @@ class PrototypeTest extends PHPUnit_Framework_TestCase
 
     public function testInstances()
     {
-        $clonedFirstPrototype = $this->getPrototype()->getPrototype();
-        $this->assertFalse($clonedFirstPrototype === $this->getPrototype());
+        $clonedFirstPrototype = $this->prototype->getPrototype();
+        $this->assertFalse($clonedFirstPrototype === $this->prototype);
         $this->assertInstanceOf(Prototype::class, $clonedFirstPrototype);
     }
 
     public function testCountInstances()
     {
         $this->assertEquals(AbstractPrototype::$count, 1);
-        $this->getPrototype()->getPrototype();
+        $this->prototype->getPrototype();
         $this->assertEquals(AbstractPrototype::$count, 2);
-        $this->getPrototype()->getPrototype();
+        $this->prototype->getPrototype();
         $this->assertEquals(AbstractPrototype::$count, 3);
-    }
-
-    /**
-     * @return AbstractPrototype
-     */
-    public function getPrototype(): AbstractPrototype
-    {
-        return $this->prototype;
     }
 }
