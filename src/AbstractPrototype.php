@@ -11,16 +11,10 @@ namespace Creational\Prototype;
 
 abstract class AbstractPrototype
 {
-    /**
-     * @var int
-     */
-    public static $count = 0;
+    public static int $count = 0;
 
     abstract public function __clone();
 
-    /**
-     * @return mixed
-     */
     public function getPrototype(): AbstractPrototype
     {
         return clone $this;

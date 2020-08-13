@@ -10,10 +10,7 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class PrototypeTest extends PHPUnit_Framework_TestCase
 {
-    /**
-     * @var AbstractPrototype
-     */
-    private $prototype;
+    private AbstractPrototype $prototype;
 
     protected function setUp(): void
     {
@@ -29,10 +26,10 @@ class PrototypeTest extends PHPUnit_Framework_TestCase
 
     public function testCountInstances()
     {
-        $this->assertEquals(AbstractPrototype::$count, 1);
+        $this->assertEquals(1, AbstractPrototype::$count);
         $this->prototype->getPrototype();
-        $this->assertEquals(AbstractPrototype::$count, 2);
+        $this->assertEquals(2, AbstractPrototype::$count);
         $this->prototype->getPrototype();
-        $this->assertEquals(AbstractPrototype::$count, 3);
+        $this->assertEquals(3, AbstractPrototype::$count);
     }
 }

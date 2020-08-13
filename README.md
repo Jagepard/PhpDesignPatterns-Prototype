@@ -8,4 +8,9 @@
 # Prototype | [API](https://github.com/Jagepard/PhpDesignPatterns-Prototype/blob/master/docs.md "Documentation API")
 ```php run``` execute in terminal
 
-![Prototype](https://github.com/Jagepard/PhpDesignPatterns-Prototype/blob/master/UML.png)
+## Result:
+```
+1 
+2 
+3 
+```

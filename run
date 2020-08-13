@@ -3,7 +3,7 @@
 
 namespace Creational\Prototype;
 
-require_once 'vendor/autoload.php';
+require_once "vendor/autoload.php";
 
 $prototype = new Prototype();
 
