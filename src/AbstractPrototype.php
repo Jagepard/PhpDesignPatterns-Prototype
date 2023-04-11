@@ -15,6 +15,13 @@ abstract class AbstractPrototype
 
     abstract public function __clone();
 
+    /**
+     * Gets the prototype
+     * ------------------
+     * Получает прототип
+     *
+     * @return AbstractPrototype
+     */
     public function getPrototype(): AbstractPrototype
     {
         return clone $this;
